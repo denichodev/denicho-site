@@ -25,11 +25,15 @@
           {%- for entry in navPages %}
             <li
               class="nav-item"
-              {% if entry.url == page.url %}
-                aria-current="page"
-              {% endif %}
             >
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
+              <a
+                href="{{ entry.url }}"
+                {% if entry.url == page.url %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{- entry.title -}}
+              </a>
             </li>
           {%- endfor %}
         </ul>

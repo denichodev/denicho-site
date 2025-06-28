@@ -10,10 +10,10 @@ eleventyNavigation:
   this is a long rant. Hello, this is a long rant.
 </p>
 
-Writings
+Blog
 
-{% for writing in collections.writings reversed %}
+{% for blogpost in collections.blog reversed %}
   <h2>
-    <a href="{{ writing.url }}">{{ writing.data.title }} - {{ writing.page.date | date: '%B %d, %Y' }}</a>
+    <a href="{{ blogpost.url }}">{{ blogpost.data.title }} - {{ blogpost.page.date | date: '%B %d, %Y' }}</a>
   </h2>
 {% endfor %}

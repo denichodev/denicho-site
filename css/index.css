@@ -23,6 +23,7 @@
   src: url('../fonts/spectral-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+
 /* Defaults */
 :root {
 	--font-family: 'Spectral', -apple-system, system-ui, sans-serif;
@@ -44,6 +45,7 @@
 
 	--text-color: var(--color-white);
   --border-color: var(--color-black);
+  --link-color: #06FFFF;
 }
 
 html,
@@ -85,7 +87,21 @@ header > .home-link {
   display: flex;
   margin: 0;
   list-style: none;
+  gap: .5em
 }
+.nav-item {
+	display: inline-block;
+}
+.nav-item a {
+  color: var(--color-black);
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: underline;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: none;
+}
+
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden:not(:focus):not(:active) {
@@ -101,6 +117,15 @@ header > .home-link {
 
 .shadow {
   filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.25));
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1,
