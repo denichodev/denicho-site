@@ -15,7 +15,7 @@ content:
   - name: about
     label: About
     type: file
-    path: "content/about"
+    path: "content/about.md"
     fields:
       - name: body
         label: Body
