@@ -6,14 +6,13 @@ eleventyNavigation:
 ---
 <h1>Home</h1>
 <p>
-  Hello, this is a long rant. Hello, this is a long rant. Hello, this is a long rant. Hello, this is a long rant. Hello,
-  this is a long rant. Hello, this is a long rant.
+  Hey!!! I am building my new blog site. If you're somehow here early, please visit
+  <a href="https://denicho-dev-deni-chos-projects.vercel.app">my old website</a> instead &lt;3
 </p>
 
-Blog
-
+<h1>Blog</h1>
 {% for blogpost in collections.blog reversed %}
-  <h2>
+  <h4>
     <a href="{{ blogpost.url }}">{{ blogpost.data.title }} - {{ blogpost.page.date | date: '%B %d, %Y' }}</a>
-  </h2>
+  </h4>
 {% endfor %}
