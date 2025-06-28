@@ -13,7 +13,7 @@ content:
         label: Body
         type: rich-text
   - name: about
-    label: about
+    label: About
     type: file
     path: "content/about"
     fields:
