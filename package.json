@@ -1,0 +1,26 @@
+{
+  "name": "denicho-site",
+  "version": "1.0.0",
+  "description": "deni cho's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denichodev/denicho-site.git"
+  },
+  "author": "denichodev@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denichodev/denicho-site/issues"
+  },
+  "homepage": "https://github.com/denichodev/denicho-site#readme",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
