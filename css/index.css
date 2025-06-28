@@ -1,12 +1,88 @@
-body {
-  font-size: 100%;
+/* spectral-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/spectral-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* spectral-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/spectral-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* spectral-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/spectral-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-h1 {
-  font-size: 1.5em;
+/* Defaults */
+:root {
+	--font-family: 'Spectral', -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Colors */
+:root {
+  /* just visual impact things */
+  --background-color: #047E7E;
+  /* anything that has text to it */
+  --container-color: #0A4848;
+
+  /* list of colors */
+  --color-white: #fff;
+  --color-yellow: #FFFF04;
+
+	--text-color: var(--color-white);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 1em auto;
+
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 54em;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header {
   font-size: 4.5em;
-  color: blue;
+  font-weight: 700;
+  padding: 16px 0;
+  text-align: center;
+  color: var(--color-yellow);
 }
+
+.shadow {
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.25));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.container {
+  background-color: var(--container-color);
+  max-width: 48em;
+  margin: 0 auto;
+  padding: 3em 2em;
+}
+

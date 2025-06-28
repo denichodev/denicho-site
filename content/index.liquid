@@ -1,16 +1,22 @@
 ---
 layout: layouts/layout.liquid
 ---
-<header>
+<header class="shadow">
   {{ metadata.title | default: 'Deni Cho' }}
 </header>
 
-Halo, hello, hallo!
+<div class="container">
+  <h1>Home</h1>
+  <p>
+    Hello, this is a long rant. Hello, this is a long rant. Hello, this is a long rant. Hello, this is a long rant.
+    Hello, this is a long rant. Hello, this is a long rant.
+  </p>
 
-Writings
+  Writings
 
-{% for writing in collections.writings reversed %}
-  <h2>
-    <a href="{{ writing.url }}">{{ writing.data.title }} - {{ writing.page.date | date: '%B %d, %Y' }}</a>
-  </h2>
-{% endfor %}
+  {% for writing in collections.writings reversed %}
+    <h2>
+      <a href="{{ writing.url }}">{{ writing.data.title }} - {{ writing.page.date | date: '%B %d, %Y' }}</a>
+    </h2>
+  {% endfor %}
+</div>

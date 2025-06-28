@@ -4,6 +4,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("css/**/*.css");
   eleventyConfig.addPassthroughCopy("css/**/*.css");
 
+  eleventyConfig.addPassthroughCopy("fonts/**/*.{woff,woff2,ttf,otf,eot,svg}");
+
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 }
 
