@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="deni cho's personal website, containing whatever he feels like writing and share to anyone that visits either intentionally / not.">
+
+    
+    <style>
+      /* spectral-regular - latin */
+@font-face {
+  font-display: fallback; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/spectral-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Defaults */
+:root {
+	--font-family: 'Spectral', -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Colors */
+:root {
+  /* just visual impact things */
+  --background-color: #047E7E;
+  /* anything that has text to it */
+  --container-color: #0A4848;
+
+  /* list of colors */
+  --color-white: #fff;
+  --color-yellow: #FFFF04;
+  --color-gray: #BEBEBE;
+  --color-black: #000;
+
+	--text-color: var(--color-white);
+  --border-color: var(--color-black);
+  --link-color: #06FFFF;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 1em auto;
+
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 54em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header > .home-link {
+  font-size: 4.5em;
+  font-weight: 400;
+  height: 110px;
+  padding: 0;
+  text-align: center;
+  color: var(--color-yellow);
+  text-decoration: none;
+}
+
+.nav {
+  border: 1px solid blue;
+  background-color: var(--color-gray);
+  border: 1px solid var(--border-color);
+  padding: 0.25em 1em;
+  height: 2.125em;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  gap: .5em
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a {
+  color: var(--color-black);
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: underline;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: none;
+}
+
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+
+.shadow {
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.25));
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.container {
+  background-color: var(--container-color);
+  max-width: 48em;
+  margin: 1.5em auto 0 auto;
+  padding: 1em 2em;
+}
+    </style>
+
+    <title>deni cho</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="home-link shadow">
+        deni cho
+      </a>
+
+      
+      <nav>
+        <h2 class="visually-hidden">Top level navigation menu</h2>
+
+        <ul class="nav shadow">
+            <li class="nav-item">
+              <a href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about/">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/blog/">Blog</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container"><h1>Can't find anything...</h1>
+<p>Maybe try to go <a href="/">home</a>?</p>
+
+</main>
+  </body>
+</html>
