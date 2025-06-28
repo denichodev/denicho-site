@@ -1,4 +1,5 @@
 import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("css/**/*.css");
@@ -7,6 +8,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fonts/**/*.{woff,woff2,ttf,otf,eot,svg}");
 
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 }
 
 export const config = {

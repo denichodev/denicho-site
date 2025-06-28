@@ -12,6 +12,30 @@
     <title>{{ metadata.title }}</title>
   </head>
   <body>
-    <main>{{ content }}</main>
+    <header>
+      <a href="/" class="home-link shadow">
+        {{ metadata.title | default: 'Deni Cho' }}
+      </a>
+
+      {% assign navPages = collections.all | eleventyNavigation %}
+      <nav>
+        <h2 class="visually-hidden">Top level navigation menu</h2>
+
+        <ul class="nav shadow">
+          {%- for entry in navPages %}
+            <li
+              class="nav-item"
+              {% if entry.url == page.url %}
+                aria-current="page"
+              {% endif %}
+            >
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">{{ content }}</main>
   </body>
 </html>

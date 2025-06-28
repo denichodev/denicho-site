@@ -1,6 +1,6 @@
 /* spectral-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Spectral';
   font-style: normal;
   font-weight: 400;
@@ -8,7 +8,7 @@
 }
 /* spectral-italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Spectral';
   font-style: italic;
   font-weight: 400;
@@ -16,7 +16,7 @@
 }
 /* spectral-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Spectral';
   font-style: normal;
   font-weight: 700;
@@ -39,8 +39,11 @@
   /* list of colors */
   --color-white: #fff;
   --color-yellow: #FFFF04;
+  --color-gray: #BEBEBE;
+  --color-black: #000;
 
 	--text-color: var(--color-white);
+  --border-color: var(--color-black);
 }
 
 html,
@@ -59,12 +62,42 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+}
+
+header > .home-link {
   font-size: 4.5em;
   font-weight: 700;
-  padding: 16px 0;
+  height: 110px;
+  padding: 0;
   text-align: center;
   color: var(--color-yellow);
+  text-decoration: none;
 }
+
+.nav {
+  border: 1px solid blue;
+  background-color: var(--color-gray);
+  border: 1px solid var(--border-color);
+  padding: 0.25em 1em;
+  height: 2.125em;
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 
 .shadow {
   filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.25));
@@ -82,7 +115,7 @@ h6 {
 .container {
   background-color: var(--container-color);
   max-width: 48em;
-  margin: 0 auto;
+  margin: 1.5em auto 0 auto;
   padding: 1em 2em;
 }
 

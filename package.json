@@ -18,7 +18,8 @@
   "homepage": "https://github.com/denichodev/denicho-site#readme",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.4"
   },
   "devDependencies": {
     "prettier": "^3.6.2"
