@@ -7,7 +7,13 @@
       name="description"
       content="{{  metadata.description }}"
     >
-    <link rel="stylesheet" href="/css/index.css">
+
+    <style>
+      {% include "./css/index.css" %}
+    </style>
+    <style>
+      {% getBundle "css" %}
+    </style>
 
     <title>{{ metadata.title }}</title>
   </head>
