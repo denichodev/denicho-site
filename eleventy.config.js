@@ -1,6 +1,9 @@
 import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
+  eleventyConfig.addWatchTarget("css/**/*.css");
+  eleventyConfig.addPassthroughCopy("css/**/*.css");
+
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 }
 
