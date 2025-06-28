@@ -1,4 +1,4 @@
 {
-  "layout": "layout.html",
+  "layout": "layouts/layout.liquid",
   "tags": "writings"
 }

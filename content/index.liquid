@@ -1,11 +1,12 @@
 ---
-layout: layout.html
+layout: layouts/layout.liquid
 ---
-Some content.
+Halo, hello, hallo!
+
+Writings
 
 {% for writing in collections.writings reversed %}
   <h2>
     <a href="{{ writing.url }}">{{ writing.data.title }} - {{ writing.page.date | date: '%B %d, %Y' }}</a>
   </h2>
-  <p>{{ writing.content }}</p>
 {% endfor %}
