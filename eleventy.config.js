@@ -3,7 +3,6 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("css/**/*.css");
-  // eleventyConfig.addPassthroughCopy("css/**/*.css");/
 
   eleventyConfig.addBundle("css", {
     toFileDirectory: "dist",
