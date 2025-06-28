@@ -4,7 +4,7 @@
   "description": "deni cho's personal website",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/denicho-site/",
+    "build-ghpages": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve"
   },
   "repository": {
