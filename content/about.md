@@ -3,7 +3,7 @@ layout: layouts/layout.liquid
 eleventyNavigation:
   key: About
   title: Who?
-  order: 2
+  order: 3
 ---
 # About me
 
