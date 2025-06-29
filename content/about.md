@@ -16,7 +16,7 @@ eleventyNavigation:
   <figcaption>This one sticks.</figcaption>
 </figure>
 
-Heya, I'm Deni Cho. I'm Indonesian and currently somehow living 10,000+ km away from home in Germany. I shared my life with my cat, Boba, who hardly lets me sleep in peace most of the time.
+Heya, I'm Deni Cho. I'm Indonesian and currently somehow living 10,000+ km away from home in Germany. I'm sharing my life with my cat, Boba, who hardly lets me sleep in peace most of the time.
 
 <figure>
   <img
@@ -27,7 +27,7 @@ Heya, I'm Deni Cho. I'm Indonesian and currently somehow living 10,000+ km away 
   <figcaption>♥ of my life.</figcaption>
 </figure>
 
-Professionally, I've been working as a Frontend Engineer for over 7 years now. What started as a dream to become a game dev kinda made me realise that I love to see what I'm building! Take a look at what I'm [building](https://github.com/denichodev).
+Professionally, I've been working as a Frontend Engineer for over 7 years now. What started as a dream to become a game dev kinda made me realise that I love to see what I've built! Take a look at what I'm [building](https://github.com/denichodev).
 
 I play a lot of games as well. 'more stuff here...'
 
