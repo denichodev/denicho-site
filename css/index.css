@@ -63,9 +63,8 @@ header > .home-link {
 }
 
 .nav {
-  border: 1px solid blue;
   background-color: var(--color-gray);
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   padding: 0.25em 1em;
   height: 2.125em;
   display: flex;
@@ -98,7 +97,6 @@ header > .home-link {
 	width: 1px;
 }
 
-
 .shadow {
   filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.25));
 }
@@ -121,8 +119,12 @@ h6 {
   font-weight: 400;
 }
 
+figure {
+  margin: 0
+}
 img{
   max-width: 100%;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.25));
 }
 img[width][height] {
   height: auto;
@@ -131,6 +133,10 @@ img[src$=".svg"] {
   width: 100%;
   height: auto;
   max-width: none;
+}
+figcaption { 
+  font-size: 0.75em;
+  color: #BEBEBE;
 }
 
 .container {
