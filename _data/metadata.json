@@ -7,5 +7,6 @@
     "name": "Deni Cho",
     "email": "denichodev@gmail.com",
     "url": "https://denicho.dev/who/"
-  }
+  },
+  "cloudfront": "https://d1dj18tn46rpgt.cloudfront.net"
 }

@@ -7,3 +7,6 @@ eleventyNavigation:
 # About
 
 hello everyone!!!
+
+<img src="{{ metadata.cloudfront }}/brown-sugar-boba.jpg">
+i love boba

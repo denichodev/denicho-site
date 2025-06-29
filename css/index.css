@@ -121,6 +121,18 @@ h6 {
   font-weight: 400;
 }
 
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
 .container {
   background-color: var(--container-color);
   max-width: 48em;
