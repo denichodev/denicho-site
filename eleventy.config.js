@@ -14,6 +14,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("fonts/**/*.{woff,woff2,ttf,otf,eot,svg}");
   eleventyConfig.addPassthroughCopy("css/prism.css");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
