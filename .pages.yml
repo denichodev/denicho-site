@@ -20,7 +20,9 @@ content:
           collapsible: true
       - name: body
         label: Body
-        type: rich-text
+        type: code
+        options:
+          language: html
   - name: about
     label: About
     type: file
