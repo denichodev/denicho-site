@@ -44,8 +44,8 @@ const addWith5 = (num: number): number => {
 console.log(addWith5(x))
 ```
 
-This is a React (JSX) + TypeScript code.
-```jsx
+This is a React (JSX) + TypeScript code, aka TSX.
+```tsx
 type Props = {
   num: number;
 }

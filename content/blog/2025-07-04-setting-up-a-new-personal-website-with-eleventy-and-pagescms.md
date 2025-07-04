@@ -19,7 +19,7 @@ Years has passed and I've been seeing the trend where people's website is stupid
 
 <to be continued, I have not made a "draft" state yet...>
 
-```
+```js
 const thisIsAnExample = 5;
 
 function addWith5() {

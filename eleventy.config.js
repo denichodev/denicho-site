@@ -1,5 +1,6 @@
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("css/**/*.css");
@@ -12,10 +13,14 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("fonts/**/*.{woff,woff2,ttf,otf,eot,svg}");
+  eleventyConfig.addPassthroughCopy("css/prism.css");
   eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
   eleventyConfig.addPlugin(HtmlBasePlugin);
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    preAttributes: { tabindex: 0 },
+  });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 }
 
