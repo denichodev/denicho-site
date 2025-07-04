@@ -5,7 +5,7 @@ content:
     path: "content/blog"
     filename: '{primary}.md'
     view:
-      fields: [title]
+      fields: [title, date, tags]
     fields:
       - name: title
         label: Title
