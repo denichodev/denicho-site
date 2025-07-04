@@ -3,6 +3,7 @@ layout: layouts/layout.liquid
 eleventyNavigation:
   key: Home
   order: 1
+numberOfLatestPostsToShow: 1
 ---
 <p>
   --- Hey!!! I am currently building my new website, this time much simpler and much more effort in writing and keeping
@@ -20,8 +21,5 @@ eleventyNavigation:
 </p>
 
 <h1>Latest writings</h1>
-{% for blogpost in collections.blog reversed %}
-  <h4>
-    <a href="{{ blogpost.url }}">{{ blogpost.data.title }} - {{ blogpost.page.date | date: '%B %d, %Y' }}</a>
-  </h4>
-{% endfor %}
+{% assign postsCount = collections.blog | size %}
+{% include 'bloglist-max-5.liquid' %}

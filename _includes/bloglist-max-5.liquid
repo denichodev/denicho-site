@@ -1,0 +1,9 @@
+{% assign latestWritings = collections.blog | reverse %}
+<ul class="blog-list">
+  {% for blogpost in latestWritings limit: 5 %}
+    <li class="blog-list-item">
+      <time datetime="{{ blogpost.date | date: '%Y-%m-%d' }}">{{ blogpost.date | date: '%d/%m/%Y' }}</time>
+      <a href="{{ blogpost.url }}">{{ blogpost.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

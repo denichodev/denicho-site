@@ -1,5 +1,6 @@
 ---
 title: Setting up a new personal website with Eleventy and PagesCMS
+date: 2025-07-04
 tags:
   - blog
   - learning_notes
