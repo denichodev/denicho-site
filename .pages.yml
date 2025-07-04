@@ -9,6 +9,12 @@ content:
       - name: title
         label: Title
         type: string
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 1
+          collapsible: true
       - name: body
         label: Body
         type: rich-text
