@@ -3,6 +3,7 @@ content:
     label: Blog
     type: collection
     path: "content/blog"
+    filename: '{primary}.md'
     view:
       fields: [title]
     fields:
