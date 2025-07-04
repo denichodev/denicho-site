@@ -1,4 +1,9 @@
 ---
+layout: layouts/layout.liquid
+eleventyNavigation:
+  key: About
+  title: Who?
+  order: 3
 ---
 # About me
 
