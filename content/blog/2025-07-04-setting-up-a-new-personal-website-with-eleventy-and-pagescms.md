@@ -18,3 +18,11 @@ Years has passed and I've been seeing the trend where people's website is stupid
 ## Starting up from scratch
 
 <to be continued, I have not made a "draft" state yet...>
+
+```
+const thisIsAnExample = 5;
+
+function addWith5() {
+  return thisIsAnExample + 5;
+}
+```
