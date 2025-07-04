@@ -30,7 +30,9 @@ content:
     fields:
       - name: body
         label: Body
-        type: rich-text
+        type: code
+        options:
+          language: html
   - name: site
     label: Site settings
     path: _data/metadata.json
