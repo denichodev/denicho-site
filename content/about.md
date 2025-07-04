@@ -1,9 +1,4 @@
 ---
-layout: layouts/layout.liquid
-eleventyNavigation:
-  key: About
-  title: Who?
-  order: 3
 ---
 # About me
 
@@ -27,11 +22,10 @@ Heya, I'm Deni Cho. I'm Indonesian and currently somehow living 10,000+ km away 
   <figcaption>♥ of my life.</figcaption>
 </figure>
 
-Professionally, I've been working as a Frontend Engineer for over 7 years now. What started as a dream to become a game dev kinda made me realise that I love to see what I've built! Take a look at what I'm [building](https://github.com/denichodev).
+I’ve been a Frontend Engineer for over 7 years now. It all started as a dream of becoming a game developer, but I realized that I absolutely love seeing the visual results of my work! Check out what I’m currently working on [GitHub](https://github.com/denichodev). Anyway, if you're a recruiter, you can download my [latest resume here](https://drive.google.com/file/d/1br8N5CH2H2lQNEVI1Hmjz9odI4vDGMHk/view).
 
-I play a lot of games as well. 'more stuff here...'
 
-My next things to learn...
+I’m a big gamer too! I love trying out different genres, from Action RPGs to MOBAs, and even some random indie games. I’m also into automation and even tactical FPS (I even made it to Immortal in Val once!). So, if you’re up for a chat about games, just let me know!
 
-To elaborate on the purpose of this site...
 
+While you're wandering around this site, you might notice that there are not really any single focus of a specific topic. Well, that's exactly the point of the site. I'm sharing on whatever I feel like sharing. Be sure to check specific tags if you only care about a specific topic :).
