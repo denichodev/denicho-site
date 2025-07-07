@@ -5,6 +5,7 @@ tags:
   - blog
   - learning_notes
 ---
+
 # Setting up a new personal website with Eleventy and PagesCMS
 
 It's been a while since I actively maintained my [old website](https://denicho-dev-deni-chos-projects.vercel.app/). Back then, it was supposed to act like a business card, an easy link where people can get to know the most basic information about me and of course, for recruiter to know what they need to know about me. But that's not the end of it. It was also supposed to be where I put my writings. I made it with Svelte in a private repository (hence I can't link it and I have no plans on making it public). After years of having it live, I didn't manage to realize the "blogging" part of the site. I guess it's just that I think with my lack of experience in Svelte, making it work for a blog is just a pain in the ass.
@@ -95,7 +96,7 @@ Other considerations would be [NearlyFreeSpeech](http://nearlyfreespeech.net) bu
 
 ## Final thoughts
 
-Well that's basically it. I didn't go into detail for some of the points, as I'm just writing down my thoughts process on some of the decisions that I made when I created this very website that you're seeing.
+Well that's basically it. I didn't go into detail for some of the points, as I'm just writing down my thoughts process on some of the decisions that I made when I created this very website that you're seeing. Oh anyway, do you know you can [access the repository](https://github.com/denichodev/denicho-site) of this website publicly?
 
 Eleventy has been nice to me so far. They could've updated their [blog example repo](https://github.com/11ty/eleventy-base-blog) to be honest, because I find that the example of GitHub Pages deployment is a little outdated. I get confused a little as well with [Front Matter Data](https://www.11ty.dev/docs/data-frontmatter/) but maybe I'm just lacking experience. The rest of the stacks seems to be fine, and I will definitely write more once there's something interesting or anything in need of a change.
 
