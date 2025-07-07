@@ -54,3 +54,5 @@ const MyComponent<React.FC<Props>> = ({ num }) => {
   return <div>{num}</div>
 }
 ```
+
+This is an `const example = "of an inline code!"`. 
