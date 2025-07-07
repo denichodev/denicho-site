@@ -66,7 +66,7 @@ For fonts, nothing special is really going on though. I set my `font-display` to
 
 ## PagesCMS for... content management
 
-Well I was looking at my options for CMS. What I want is basically pretty darn simple CMS that lets me quickly adjust anything if I don't have my laptop with me (rarely happens though). Enter PagesCMS. Setting it up was pretty easy, nothing complicated is going on in their [documentation](https://pagescms.org/docs/), and it gets the job done. No deployment needed, no need to host anywhere, and the best part is that there is **no payment required** ;).
+Well I was looking at my options for CMS. What I want is basically pretty darn simple CMS that lets me quickly adjust anything if I don't have my laptop with me (rarely happens though). Enter [PagesCMS](http://pagescms.org). Setting it up was pretty easy, nothing complicated is going on in their [documentation](https://pagescms.org/docs/), and it gets the job done. No deployment needed, no need to host anywhere, and the best part is that there is **no payment required** ;).
 
 One thing to note is that I set the `body` of my posts to be `type: code` so that I can have full control on what I put inside, like an HTML element or a liquid code, pretty much anything (so far) that can be parsed by Eleventy.
 
