@@ -1,8 +1,10 @@
 import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import md from "./lib/md.js";
 
 export default function (eleventyConfig) {
+  eleventyConfig.setLibrary("md", md);
   eleventyConfig.addWatchTarget("css/**/*.css");
 
   eleventyConfig.addBundle("css", {
