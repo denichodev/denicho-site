@@ -18,6 +18,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css/prism.css");
   eleventyConfig.addPassthroughCopy("favicon.png");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("wander");
 
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
   eleventyConfig.addPlugin(HtmlBasePlugin);
