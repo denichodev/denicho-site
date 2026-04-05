@@ -184,6 +184,6 @@ code {
   margin: 0;
 }
 
-.semivoid-item time {
+time {
   color:  var(--color-gray);;
 }

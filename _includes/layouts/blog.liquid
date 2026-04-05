@@ -5,4 +5,7 @@ layout: layouts/layout.liquid
   {% include "./css/prism.css" %}
 </style>
 
+<h1>{{ title }}</h1>
+<time class="blog-time" datetime="{{ date | date: '%Y-%m-%d' }}">{{ date | date: '%d/%m/%Y' }}</time>
+
 {{ content }}
