@@ -35,8 +35,8 @@ content:
       - name: title
         label: Title
         type: string
-      - name: excerpt
-        label: text
+      - name: text
+        label: text (max 280)
         type: text
         options:
           maxlength: 280
