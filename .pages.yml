@@ -36,7 +36,7 @@ content:
         label: Title
         type: string
       - name: excerpt
-        label: TEXT (max 280)
+        label: text
         type: text
         options:
           maxlength: 280
