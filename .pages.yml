@@ -12,7 +12,10 @@ content:
         type: string
       - name: datetime
         label: Date Time
-        type: datetime
+        type: date
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm
       - name: tags
         label: Tags
         type: string
