@@ -1,25 +1,24 @@
-
-/* spectral-regular - latin */
+/* playfair-regular - latin */
 @font-face {
-  font-display: fallback; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Spectral';
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/spectral-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/playfair-v10-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* Defaults */
 :root {
-	--font-family: 'Spectral', -apple-system, system-ui, sans-serif;
+	--font-family: 'Playfair', -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Colors */
 :root {
   /* just visual impact things */
-  --background-color: #047E7E;
+  --background-color: #025757;
   /* anything that has text to it */
-  --container-color: #0A4848;
+  --container-color: #011e1e;
 
   /* list of colors */
   --color-white: #fff;
@@ -179,3 +178,12 @@ code {
   margin: 0;
 }
 
+.semivoid-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.semivoid-item time {
+  color:  var(--color-gray);;
+}

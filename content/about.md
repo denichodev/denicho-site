@@ -1,9 +1,9 @@
 ---
 layout: layouts/layout.liquid
 eleventyNavigation:
-  key: About
-  title: Who?
-  order: 3
+  key: about
+  title: who?
+  order: 4
 ---
 # About me
 
@@ -16,7 +16,7 @@ eleventyNavigation:
   <figcaption>This one sticks.</figcaption>
 </figure>
 
-Heya, I'm Deni Cho. I'm Indonesian and currently somehow living 10,000+ km away from home in Germany. I'm sharing my life with my cat, Boba, who hardly lets me sleep in peace most of the time.
+Heya, I'm Deni. I currently live somehow 10,000+ km away from home in Germany. I'm sharing my life with my cat, Boba, who hardly lets me sleep in peace most of the time.
 
 <figure>
   <img
@@ -27,7 +27,7 @@ Heya, I'm Deni Cho. I'm Indonesian and currently somehow living 10,000+ km away 
   <figcaption>♥ of my life.</figcaption>
 </figure>
 
-I’ve been a Frontend Engineer for over 7 years now. It all started as a dream of becoming a game developer, but I realized that I absolutely love seeing the visual results of my work! Check out what I’m currently working on [GitHub](https://github.com/denichodev). Anyway, if you're a recruiter, you can download my [latest resume here](https://drive.google.com/file/d/1br8N5CH2H2lQNEVI1Hmjz9odI4vDGMHk/view).
+I’ve been a Frontend Engineer for over 7 years now. It all started as a dream of becoming a game developer, but I realized that I absolutely love seeing the visual results of my work! Check out what I’m currently working on [GitHub](https://github.com/denichodev). Anyway, get my [latest resume](https://drive.google.com/file/d/1br8N5CH2H2lQNEVI1Hmjz9odI4vDGMHk/view) if you care.
 
 
 I’m a big gamer too! I love trying out different genres, from Action RPGs to MOBAs, and even some random indie games. I’m also into automation and even tactical FPS (I even made it to Immortal in Val once!). So, if you’re up for a chat about games, just let me know!

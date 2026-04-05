@@ -1,0 +1,11 @@
+<ul reversed class="semivoid-list">
+  {% for semivoid in collections.semivoid reversed %}
+    <li class="semivoid-item">
+      <p>{{ semivoid.data.text }}</p>
+      <time datetime="{{ semivoid.date | date: '%Y-%m-%d %H:%M' }}">
+        {{- semivoid.date | date: '%d/%m/%Y %H:%M' -}}
+      </time>
+    </li>
+    <hr>
+  {% endfor %}
+</ul>
