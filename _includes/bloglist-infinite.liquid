@@ -1,7 +1,8 @@
 <ul reversed class="blog-list">
   {% for blogpost in collections.blog reversed %}
     <li class="blog-list-item">
-      <time datetime="{{ blogpost.date | date: '%Y-%m-%d' }}">{{ blogpost.date | date: '%d/%m/%Y' }}</time>
+      <time datetime="{{ blogpost.date | date: '%Y-%m-%d' }}">{{ blogpost.date | date: '%Y/%m/%d' }}</time>
+
       <a href="{{ blogpost.url }}">{{ blogpost.data.title }}</a>
     </li>
   {% endfor %}

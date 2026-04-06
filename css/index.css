@@ -181,6 +181,15 @@ code {
   margin: 0;
 }
 
+.blog-list-item {
+  display: flex;
+}
+
+.blog-list-item time {
+  display: inline-block;
+  width: 100px;
+}
+
 .semivoid-list {
   list-style: none;
   padding: 0;
