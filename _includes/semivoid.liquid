@@ -3,7 +3,7 @@
     <li class="semivoid-item">
       <p>{{ semivoid.data.text }}</p>
       <time datetime="{{ semivoid.date | date: '%Y-%m-%d %H:%M' }}">
-        {{- semivoid.date | date: '%d/%m/%Y %H:%M' -}}
+        {{- semivoid.date | date: '%b %d, %Y %H:%M' -}}
       </time>
     </li>
     <hr>

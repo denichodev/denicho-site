@@ -86,6 +86,9 @@ header > .home-link {
 	text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden:not(:focus):not(:active) {
