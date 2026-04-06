@@ -14,6 +14,12 @@ export default function (eleventyConfig) {
     bundleHtmlContentFromSelector: "style",
   });
 
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+      return false;
+    }
+  });
+
   eleventyConfig.addPassthroughCopy("fonts/**/*.{woff,woff2,ttf,otf,eot,svg}");
   eleventyConfig.addPassthroughCopy("css/prism.css");
   eleventyConfig.addPassthroughCopy("favicon.png");

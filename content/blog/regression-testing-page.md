@@ -1,5 +1,6 @@
 ---
 title: Regression testing page
+draft: false
 date: 1970-01-01
 tags:
   - meta

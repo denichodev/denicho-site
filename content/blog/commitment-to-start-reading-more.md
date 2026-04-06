@@ -1,5 +1,6 @@
 ---
 title: Commitment to start reading more
+draft: false
 date: 2026-04-06
 tags:
   - life
